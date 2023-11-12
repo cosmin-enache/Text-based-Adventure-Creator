@@ -79,7 +79,7 @@ function buildCardInteractable(cardWrapper) {
     const newStoryCardButton = createElementAndAppendTo("button", cardInteractable, { classes: [CLASS_NEW_CARD_BUTTON] });
 
     newStoryCardButton.addEventListener("click", () => {
-        const newStoryCard = new StoryCard("New story man!");
+        const newStoryCard = new StoryCard("New story");
         const choiceName = prompt("What is the choice you want to include for this story?");
 
         if (choiceName.length === 0) return;
