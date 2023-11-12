@@ -1,0 +1,14 @@
+{
+  "name": "text-based-adventure-generator",
+  "version": "1.0.0",
+  "description": "Text based adventure generator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cosmin-enache",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.53.0"
+  }
+}

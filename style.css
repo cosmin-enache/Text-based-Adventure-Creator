@@ -1,0 +1,127 @@
+body {
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    background: #f0efeb;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#story-board {
+    width: 100vw;
+    height: 100vh;
+}
+
+#play-through-story {
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+#story-text {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+#choices-list * {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#export-button {
+    position: relative;
+    top: -14px;
+    left: 2px;
+    background: rgb(7, 185, 7);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 8px 12px 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.card-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    background: #fff;
+    z-index: 1000;
+    padding: 6px 6px 6px 6px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(10, 10, 10, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+}
+
+.card-story {
+    height: 120px;
+    border: none;
+}
+
+.card-interactable {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.new-card-button {
+    background: transparent;
+    background-image: url("./icons/icon-plus.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.card-choice-tag {
+    flex: 5;
+    text-wrap: wrap;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.card-pin {
+    flex: 1;
+    width: 30px;
+    height: 30px;
+    background-image: url("./icons/icon-drag.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    cursor: pointer;
+}
+
+.card-pin:hover,
+.new-card-button:hover {
+    opacity: 0.75;
+}
+
+.card-pin:active,
+.new-card-button:active {
+    opacity: 0.5;
+}
+
+.line-connector {
+    position: absolute;
+    height: 3px;
+    background: #071b14;
+    transform-origin: 0 0;
+}

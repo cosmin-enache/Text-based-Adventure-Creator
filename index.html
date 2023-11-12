@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="story-board">
+        <button id="export-button">Export Story</button>
+        <textarea id="export-output" placeholder="Story will be exported here"></textarea>
+        <textarea id="import-area" placeholder="Paste your story here to import it"></textarea>
+    </section>
+
+    <section id="play-through-story">
+        <h2 id="story-text"></h2>
+        <ol id="choices-list"></ol>
+    </section>
+
+    <!-- Must come first! -->
+    <script src="scripts/strings.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/selectors.js"></script>
+
+    <script src="scripts/lines.js"></script>
+    <script src="scripts/cards.js"></script>
+
+    <!-- Must come last! -->
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
