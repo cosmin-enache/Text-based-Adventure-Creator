@@ -82,7 +82,7 @@ function buildCardInteractable(cardWrapper) {
         const newStoryCard = new StoryCard("New story");
         const choiceName = prompt("What is the choice you want to include for this story?");
 
-        if (choiceName.length === 0) return;
+        if (!choiceName) return;
 
         cardData.addToChoiceCardMap(choiceName, newStoryCard);
 
